@@ -1,0 +1,11 @@
+students =  ["Sunny", "Arun", "Sahil", "Surya", "Mannat"]
+print(students.append("Krishna"))
+print(students)
+print(students.index("Sahil"))
+print(students.__getitem__(1))
+print(students[1])
+print('jain' in students)
+students.pop(2)
+print(students)
+students.insert(2, "Jain")
+print(students)
