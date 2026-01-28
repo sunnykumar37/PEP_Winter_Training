@@ -13,3 +13,10 @@ This repository contains materials and projects for the PEP Winter Training prog
 ## Getting Started
 
 Each day's folder contains code examples, notebooks, and a README with details.
+
+
+
+# MVT Framework
+MOdel - This deals with access, validation and relationships among data. MOdels  are python classes that mediate between Django ORM(Object-Relational-Mapping) and database tabeles.
+Template  -  This deals with the presentation layer. Templates define how data is displayed to the user using HTML along with Django Template Language (DTL).
+Views - This contains the business logic of the application. Views handle user requests, process data using models, and return responses (usually HTML pages or JSON).
