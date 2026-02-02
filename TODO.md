@@ -1,8 +1,5 @@
-# TODO: Correct README Files
+# TODO: Fix 404 Errors in Django Project
 
-- [x] Update main README.md with project overview
-- [x] Update Day1/README.md: Standardize header
-- [x] Update Day2/README.md: Add header and proper list
-- [x] Update Day3/README.md: Standardize format
-- [x] Update Day4/README.md: Fix header and structure
-- [x] Update Project1/README.md: Fix typos and add code blocks
+- [ ] Add root URL in mysite/urls.py to include yoursite.urls for the root path
+- [ ] Update TEMPLATES['DIRS'] in settings.py to include the template directory
+- [ ] Update index view in yoursite/views.py to render the index.html template
