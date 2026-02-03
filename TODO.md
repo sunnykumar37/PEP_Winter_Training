@@ -1,5 +1,5 @@
-# TODO: Fix 404 Errors in Django Project
+# TODO for Customizing 404 Error Page
 
-- [ ] Add root URL in mysite/urls.py to include yoursite.urls for the root path
-- [ ] Update TEMPLATES['DIRS'] in settings.py to include the template directory
-- [ ] Update index view in yoursite/views.py to render the index.html template
+- [x] Update body background to a red-blue-white gradient
+- [x] Wrap main content in a white box with padding and shadow
+- [x] Test the page by running Django server and checking a 404 URL

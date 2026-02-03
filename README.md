@@ -8,7 +8,12 @@ This repository contains materials and projects for the PEP Winter Training prog
 - **Day2**: Data structures and string manipulations.
 - **Day3**: Object-oriented programming and advanced features.
 - **Day4**: Exception handling and tuples.
+- **Day6**: Advanced exception handling, class methods, and inheritance.
+- **Day8**: Leap year calculations and other Python exercises.
 - **Project1**: Django web application project.
+- **MAIN**: Django web application with frontend development, including home, about, and services apps (Day 10 work).
+- **Project2**: Another Django project with Tailwind CSS integration (Day 7 work).
+- **tailwind-project**: Django project using Tailwind CSS for styling (Day 9 work).
 
 ## Getting Started
 
