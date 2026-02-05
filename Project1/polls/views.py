@@ -18,3 +18,11 @@ def home_view(request):
     context = {}
     context["form"] =  InputForm()
     return render(request, "home.html",  context)
+
+
+
+def form_view(request):
+    if request.method ==  "POST":
+        print(request.POST)
+        name =  request.POST.get('your_name')
+    return render(request, "form.html")

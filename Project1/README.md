@@ -43,4 +43,21 @@ python manage.py startapp polls
 '''
 from polls.models import user
 u = user(first_name = 'abc', last_name = 'cde', email = 'abc@cde.com')
-u.save() '''
+u.save() 
+
+# To see the objects and values 
+user.object.all()
+user.object.all.values()
+
+# To see specific id
+user.objects.get(id=2)
+user.objects.filter(id=2).values().first()
+
+# To see id in dic
+user.objects.values().get(id=2)
+
+# to update first name for specific id
+u = user.objects.get(id=2)
+u.first_name = 'rudresh'
+u.save()
+'''
