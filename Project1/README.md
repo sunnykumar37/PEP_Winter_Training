@@ -30,3 +30,17 @@ python manage.py migrate
 ```
 python manage.py startapp polls
 ```
+
+## Today's Work
+
+- Utilized `python manage.py shell` command for interactive testing and data manipulation in the Django shell.
+- Created register and login pages with corresponding HTML templates (register.html and login.html) for user authentication.
+- Developed a User model in polls/models.py with fields for first_name, last_name, and email.
+- Implemented a user list view in polls/views.py to display all users using the user_list.html template.
+- Set up URL configurations and static files for the application.
+
+# python-shell-code
+'''
+from polls.models import user
+u = user(first_name = 'abc', last_name = 'cde', email = 'abc@cde.com')
+u.save() '''
