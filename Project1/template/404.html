@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="error-visual">
+            <h1 class="error-code">404</h1>
+            <p class="error-tagline">Lost in Space</p>
+        </div>
+
+        <div class="message-group">
+            <h2 class="title">Page Not Found</h2>
+            <p class="subtitle">The link you followed may be broken, or the page may have been removed.</p>
+        </div>
+
+        <div class="notice-box">
+            <p>"मित्र, आप जिस पेज की तलाश कर रहे हैं, वह अभी तैयार नहीं हो पाया है। कृपया कुछ दिनों तक प्रतीक्षा करें।”</p>
+        </div>
+
+        <div class="action-area">
+            <a href="{% url 'home' %}" class="btn-home">Return to Home</a>
+        </div>
+    </div>
+
+</body>
+</html>

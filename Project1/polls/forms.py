@@ -5,3 +5,6 @@ class InputForm(forms.Form):
     last_name =  forms.CharField(max_length=200)
     roll_number = forms.IntegerField(help_text = "enter6 digit roll mumber")
     password = forms.CharField(widget = forms.PasswordInput)
+
+
+from django.shortcuts import render

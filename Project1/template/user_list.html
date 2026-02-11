@@ -3,14 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>User List</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <style>
+        .user-container {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 20px;
+        }
+        .user-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .user-card h1 {
+            color: #0a121be2;
+            margin-bottom: 20px;
+        }
+        .user-list {
+            list-style: none;
+            padding: 0;
+        }
+        .user-item {
+            background: #f8f9fa;
+            padding: 12px 15px;
+            margin: 10px 0;
+            border-radius: 6px;
+            border-left: 4px solid #0a121be2;
+            font-size: 1.05rem;
+        }
+        .empty-message {
+            color: #6b7280;
+            text-align: center;
+            padding: 20px;
+            font-style: italic;
+        }
+        .nav-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .nav-links a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 8px 16px;
+            background: #0a121be2;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background 0.2s;
+        }
+        .nav-links a:hover {
+            background: #0052a3;
+        }
+    </style>
 </head>
 <body>
-    <h1>Users</h1>
-    <ul>
-        {% for x in myusers %}
-        <li>{{ x.first_name }} {{ x.last_name }}</li>
-        {% endfor %}
-    </ul>
+    <div class="user-container">
+        <div class="user-card">
+            <h1>Users List</h1>
+            {% if myusers %}
+                <ul class="user-list">
+                    {% for x in myusers %}
+                    <li class="user-item">{{ x.first_name }} {{ x.last_name }} ({{ x.email }})</li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p class="empty-message">No users found. Add some users to see them here!</p>
+            {% endif %}
+            <div class="nav-links">
+                <a href="{% url 'form_view' %}">Add User</a>
+                <a href="{% url 'home' %}">Home</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
