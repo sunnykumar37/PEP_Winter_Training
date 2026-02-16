@@ -14,6 +14,8 @@ This repository contains materials and projects for the PEP Winter Training prog
 - **MAIN**: Django web application with frontend development, including home, about, and services apps (Day 10 work).
 - **Project2**: Another Django project with Tailwind CSS integration (Day 7 work).
 - **tailwind-project**: Django project using Tailwind CSS for styling (Day 9 work).
+- **Assignment1**: Django REST API project with Student model and CRUD operations.
+- **Assignment2**: Django user registration system with email integration.
 
 ## Getting Started
 
